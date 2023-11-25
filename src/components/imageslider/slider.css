@@ -1,0 +1,13 @@
+.slide-one-item{
+    position: relative;
+    z-index: 1;
+}
+
+.owl-carousel{
+    width: 100%;
+}
+
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+}
