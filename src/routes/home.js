@@ -10,6 +10,7 @@ import { IoBulbOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa";
 import { GiMechanicalArm } from "react-icons/gi";
 import { FaCircleNodes } from "react-icons/fa6";
+import { FaPlay } from "react-icons/fa6";
 
 
 function Home() {
@@ -107,7 +108,9 @@ function Home() {
                                 <div className="img-border">
                                     <a href="https://vimeo.com/28959265" className="popup-vimeo image-play">
                                         <span className="icon-wrap">
-                                            <span className="icon icon-play" />
+                                            <span className="icon" >
+                                                <FaPlay />
+                                            </span>
                                         </span>
                                         <img src="images/img_2.jpg" alt="" className="img-fluid" />
                                     </a>

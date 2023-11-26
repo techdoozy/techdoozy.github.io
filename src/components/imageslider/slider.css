@@ -8,6 +8,11 @@
 }
 
 .owl-carousel .owl-item {
-    min-height: 1px;
-    float: left;
+    display: none;
+    transition-duration: 1s ease;
+}
+
+.owl-carousel .owl-item.active {
+    display: block;
+    transition-duration: 1s ease;
 }
