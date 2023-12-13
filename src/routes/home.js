@@ -254,24 +254,24 @@ function Home() {
                             <li id="mystickyelements-social-whatsapp" className="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on">
                                 <style dangerouslySetInnerHTML={{ __html: "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" }} />
                                 <span className="mystickyelements-social-icon social-whatsapp social-custom" data-tab-setting="hover" data-click={0} data-mobile-behavior="disable" data-flyout="disable" style={{ background: '#0e7f20' }}>
-                                    <a href="https://api.whatsapp.com/send?phone=91%208075145381" target="_blank" rel="noopener" data-url="https://api.whatsapp.com/send?phone=91%208075145381" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
+                                    <a href="https://api.whatsapp.com/send?phone=919986744852" target="_blank" rel="noopener" data-url="https://api.whatsapp.com/send?phone=919986744852" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
                                         <FaWhatsapp className="fab" />
                                     </a>
                                 </span>
                                 <span className="mystickyelements-social-text " style={{ background: '#0e7f20' }}>
-                                    <a href="https://api.whatsapp.com/send?phone=91%208075145381" target="_blank" rel="noopener" data-tab-setting="hover" data-flyout="disable">
+                                    <a href="https://api.whatsapp.com/send?phone=919986744852" target="_blank" rel="noopener" data-tab-setting="hover" data-flyout="disable">
                                         WhatsApp																					</a>
                                 </span>
                             </li>
                             <li id="mystickyelements-social-phone" className="mystickyelements-social-icon-li mystickyelements-social-phone element-desktop-on element-mobile-on">
                                 <style dangerouslySetInnerHTML={{ __html: "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" }} />
                                 <span className="mystickyelements-social-icon social-phone social-custom" data-tab-setting="hover" data-click={0} data-mobile-behavior="disable" data-flyout="disable" style={{ background: 'rgb(43, 125, 239)', borderBottomRightRadius: '10px' }}>
-                                    <a href="tel:+91%209526435000" data-url="tel:+91%209526435000" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
+                                    <a href="tel:+91919986744852" data-url="tel:+919986744852" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
                                         <FaPhoneAlt className="fa" />
                                     </a>
                                 </span>
                                 <span className="mystickyelements-social-text " style={{ background: '#2b7def' }}>
-                                    <a href="tel:+91%209526435000" data-tab-setting="hover" data-flyout="disable">
+                                    <a href="tel:+91919986744852" data-tab-setting="hover" data-flyout="disable">
                                         Phone																					</a>
                                 </span>
                             </li>
