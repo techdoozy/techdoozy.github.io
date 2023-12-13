@@ -9,10 +9,10 @@
 
 .owl-carousel .owl-item {
     display: none;
-    transition-duration: 1s ease;
+    animation: fade-out 500ms forwards;
 }
 
 .owl-carousel .owl-item.active {
     display: block;
-    transition-duration: 1s ease;
+    animation: fade-in 500ms forwards;
 }

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { SliderData } from './Sliderdata';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 import './slider.css'
@@ -15,6 +15,18 @@ const ImageSlider = ({ slides }) => {
     const prevSlide = () => {
         setCurrent(current === 0 ? length - 1 : current - 1);
     };
+
+    // The useEffect Hook allows you to perform side effects in your components.
+    // Some examples of side effects are: fetching data, directly updating the DOM, and timers.
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+          nextSlide();
+        }, 3000);
+    
+        return () => {
+          clearTimeout(timeout);
+        };
+    },[current]);
 
     if (!Array.isArray(slides) || slides.length <= 0) {
         return null;
@@ -43,8 +55,8 @@ const ImageSlider = ({ slides }) => {
                             <div className="container">
                                 <div className="row align-items-center justify-content-center">
                                     <div className="col-md-7 text-center" data-aos="fade">
-                                        <h1 className="mb-2">IEEE Academic Live Projects</h1>
-                                        <h2 className="caption">B.E | M.Tech | BCA | MCA | BBA | MBA | Diploma</h2>
+                                        <h1 className="mb-2">{slide.title}</h1>
+                                        <h2 className="caption">{slide.subtitle}</h2>
                                     </div>
                                 </div>
                             </div>

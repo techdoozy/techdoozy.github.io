@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import './navbar.css'
 import { GiRocketThruster } from "react-icons/gi";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -7,10 +7,14 @@ import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
 
+import { NavData } from './navData';
+
 function NavBar() {
     const [click, setClick] = useState(false)
     const handleClick = () => setClick(!click)
     const closeMobileMenu = () => setClick(false)
+    const location = useLocation()
+
 
     return (
         <>
@@ -86,29 +90,45 @@ function NavBar() {
                                             <div className="container">
                                                 <div className="d-inline-block d-lg-none  ml-md-0 mr-auto py-3"><a href="#" className="site-menu-toggle js-menu-toggle"><span className="icon-menu h3" /></a></div>
                                                 <ul className="site-menu js-clone-nav d-none d-lg-block">
+                                                    {/* { menu.children && menu.children.length > 0
+        ? menu.children.map((subItem, index) => {
+            return (
+                <>
+                <li><a href="rooms.html">Standard Room</a></li>
+                </>
+            ) }) : null } */}
+                                                    {/* {NavData.map((menu, index) => {
+                                                        return (
+                                                            <>
+                                                                <li className={(location.pathname == menu.path) ? "active" : ""}>
+                                                                    <a href="index.html">{menu.title}</a>
+                                                                </li>
+                                                            </>
+                                                        )
+                                                    })} */}
                                                     <li className="active">
-                                                        <a href="index.html">Home</a>
+                                                        <a href="/">Home</a>
                                                     </li>
                                                     <li className="has-children">
-                                                        <a href="rooms.html">Rooms</a>
+                                                        <a href="/">Academic Projects</a>
                                                         <ul className="dropdown arrow-top">
-                                                            <li><a href="rooms.html">Standard Room</a></li>
-                                                            <li><a href="rooms.html">Family Room</a></li>
-                                                            <li><a href="rooms.html">Single Room</a></li>
+                                                            <li><a href="/">MBA Projects</a></li>
+                                                            <li><a href="/">Embedded Projects</a></li>
+                                                            <li><a href="/">Python Projects</a></li>
                                                             <li className="has-children">
-                                                                <a href="rooms.html">Rooms</a>
+                                                                <a href="/">Java Projects</a>
                                                                 <ul className="dropdown">
-                                                                    <li><a href="rooms.html">America</a></li>
-                                                                    <li><a href="rooms.html">Europe</a></li>
-                                                                    <li><a href="rooms.html">Asia</a></li>
-                                                                    <li><a href="rooms.html">Africa</a></li>
+                                                                    <li><a href="/">Machine Learning</a></li>
+                                                                    <li><a href="/">Artificial Intelligence</a></li>
+                                                                    {/* <li><a href="rooms.html">Asia</a></li> */}
+                                                                    {/* <li><a href="rooms.html">Africa</a></li> */}
                                                                 </ul>
                                                             </li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="events.html">Events</a></li>
-                                                    <li><a href="about.html">About</a></li>
-                                                    <li><a href="contact.html">Contact</a></li>
+                                                    <li><a href="/">Internship</a></li>
+                                                    <li><a href="/">About</a></li>
+                                                    <li><a href="/">Contact</a></li>
                                                 </ul>
                                             </div>
                                         </nav>

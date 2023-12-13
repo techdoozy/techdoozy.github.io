@@ -11,6 +11,11 @@ import { FaUsers } from "react-icons/fa";
 import { GiMechanicalArm } from "react-icons/gi";
 import { FaCircleNodes } from "react-icons/fa6";
 import { FaPlay } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaArrowLeftLong } from "react-icons/fa6";
+
+import Testimonials from '../components/testimonials'
 
 
 function Home() {
@@ -19,7 +24,7 @@ function Home() {
             <div>
                 <ImageSlider slides={SliderData} />
 
-                <IconContext.Provider value={{ color: "#fff" }}>
+                <IconContext.Provider value={{ color: "#000" }}>
                     <div className="site-section">
                         <div className="container">
                             <div className="row">
@@ -84,12 +89,12 @@ function Home() {
                 {/* Small Content */}
 
 
-                <div className="py-5 upcoming-events" style={{ backgroundImage: 'url("images/hero_2.jpg")', backgroundAttachment: 'fixed' }}>
+                <div className="py-5 upcoming-events" style={{ backgroundImage: 'url("images/hero_6.jpeg")', backgroundAttachment: 'fixed' }}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6">
-                                <h2 className="text-white">Summer Promo 50% Off</h2>
-                                <a href="#" className="text-white btn btn-outline-warning rounded-0 text-uppercase">Avail Now</a>
+                                <h2 className="text-white">IEEE Latest Projects Catalogue</h2>
+                                <a href="#" className="text-white btn btn-outline-warning rounded-0 text-uppercase">Download</a>
                             </div>
                             <div className="col-md-6">
                                 <span className="caption">The Promo will start in</span>
@@ -112,10 +117,10 @@ function Home() {
                                                 <FaPlay />
                                             </span>
                                         </span>
-                                        <img src="images/img_2.jpg" alt="" className="img-fluid" />
+                                        <img src="https://as2.ftcdn.net/v2/jpg/03/84/55/29/1000_F_384552930_zPoe9zgmCF7qgt8fqSedcyJ6C6Ye3dFs.jpg" alt="" className="img-fluid" />
                                     </a>
                                 </div>
-                                <img src="images/img_1.jpg" alt="Image" className="img-fluid image-absolute" />
+                                <img src="https://www.shutterstock.com/shutterstock/photos/2159023891/display_1500/stock-photo-happy-businesspeople-laughing-while-collaborating-on-a-new-project-in-an-office-group-of-diverse-2159023891.jpg" alt="Image" className="img-fluid image-absolute" />
                             </div>
                             <div className="col-md-5 ml-auto">
                                 <div className="section-heading text-left">
@@ -130,61 +135,18 @@ function Home() {
 
                 {/* Testimonials */}
 
-                <div className="site-section block-14 bg-light">
+                {/* <div className="site-section block-14 bg-light">
                     <div className="container">
                         <div className="row">
                             <div className="col-md-6 mx-auto text-center mb-5 section-heading">
                                 <h2>What People Say</h2>
                             </div>
                         </div>
-                        <div className="nonloop-block-14 owl-carousel">
-                            <div className="p-4">
-                                <div className="d-flex block-testimony">
-                                    <div className="person mr-3">
-                                        <img src="images/person_1.jpg" alt="Image" className="img-fluid rounded" />
-                                    </div>
-                                    <div>
-                                        <h2 className="h5">Katie Johnson</h2>
-                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!”</blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="p-4">
-                                <div className="d-flex block-testimony">
-                                    <div className="person mr-3">
-                                        <img src="images/person_2.jpg" alt="Image" className="img-fluid rounded" />
-                                    </div>
-                                    <div>
-                                        <h2 className="h5">Jane Mars</h2>
-                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!”</blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="p-4">
-                                <div className="d-flex block-testimony">
-                                    <div className="person mr-3">
-                                        <img src="images/person_3.jpg" alt="Image" className="img-fluid rounded" />
-                                    </div>
-                                    <div>
-                                        <h2 className="h5">Shane Holmes</h2>
-                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!”</blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="p-4">
-                                <div className="d-flex block-testimony">
-                                    <div className="person mr-3">
-                                        <img src="images/person_4.jpg" alt="Image" className="img-fluid rounded" />
-                                    </div>
-                                    <div>
-                                        <h2 className="h5">Mark Johnson</h2>
-                                        <blockquote>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias accusantium qui optio, possimus necessitatibus voluptate aliquam velit nostrum tempora ipsam!”</blockquote>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
+                        <Testimonials />
+
                     </div>
-                </div>
+                </div> */}
 
                 {/* Location */}
 
@@ -270,7 +232,7 @@ function Home() {
                             <div className="col-md-12">
                                 <p>
                                     {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-                                    Copyright ©  All Rights Reserved | This template is made with <i className="icon-heart text-primary" aria-hidden="true" /> by <a href="https://colorlib.com" target="_blank">Colorlib --- Downloaded from </a><a href="https://themeslab.org/" target="_blank">Themeslab</a>
+                                    © 2023 TechDoozy. All Rights Reserved
                                     {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                                 </p>
                             </div>
@@ -280,6 +242,42 @@ function Home() {
 
 
             </div>
+
+            {/* Whatsapp sticky thing */}
+                <div className="mystickyelements-fixed mystickyelements-position-left mystickyelements-position-screen-center mystickyelements-position-mobile-left mystickyelements-on-hover mystickyelements-size-medium mystickyelements-mobile-size-medium mystickyelements-entry-effect-slide-in mystickyelements-templates-default entry-effect" style={{ transition: 'all 0s ease 0s' }}>
+                    <div className="mystickyelement-lists-wrap">
+                        <ul className="mystickyelements-lists mysticky">
+                            <li className="mystickyelements-minimize ">
+                                <span className="mystickyelements-minimize minimize-position-left minimize-position-mobile-left" style={{ background: '#000000' }}>
+                                    <IconContext.Provider value={{ color: "#fff" }}><FaArrowLeftLong />	</IconContext.Provider>							</span>
+                            </li>
+                            <li id="mystickyelements-social-whatsapp" className="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on">
+                                <style dangerouslySetInnerHTML={{ __html: "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" }} />
+                                <span className="mystickyelements-social-icon social-whatsapp social-custom" data-tab-setting="hover" data-click={0} data-mobile-behavior="disable" data-flyout="disable" style={{ background: '#0e7f20' }}>
+                                    <a href="https://api.whatsapp.com/send?phone=91%208075145381" target="_blank" rel="noopener" data-url="https://api.whatsapp.com/send?phone=91%208075145381" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
+                                        <FaWhatsapp className="fab" />
+                                    </a>
+                                </span>
+                                <span className="mystickyelements-social-text " style={{ background: '#0e7f20' }}>
+                                    <a href="https://api.whatsapp.com/send?phone=91%208075145381" target="_blank" rel="noopener" data-tab-setting="hover" data-flyout="disable">
+                                        WhatsApp																					</a>
+                                </span>
+                            </li>
+                            <li id="mystickyelements-social-phone" className="mystickyelements-social-icon-li mystickyelements-social-phone element-desktop-on element-mobile-on">
+                                <style dangerouslySetInnerHTML={{ __html: "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" }} />
+                                <span className="mystickyelements-social-icon social-phone social-custom" data-tab-setting="hover" data-click={0} data-mobile-behavior="disable" data-flyout="disable" style={{ background: 'rgb(43, 125, 239)', borderBottomRightRadius: '10px' }}>
+                                    <a href="tel:+91%209526435000" data-url="tel:+91%209526435000" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
+                                        <FaPhoneAlt className="fa" />
+                                    </a>
+                                </span>
+                                <span className="mystickyelements-social-text " style={{ background: '#2b7def' }}>
+                                    <a href="tel:+91%209526435000" data-tab-setting="hover" data-flyout="disable">
+                                        Phone																					</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
         </>
 
         //     <div className="home">
