@@ -14,6 +14,7 @@ import { FaPlay } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import Hero6 from '../hero_6.jpeg'
 
 import Testimonials from '../components/testimonials'
 
@@ -89,7 +90,7 @@ function Home() {
                 {/* Small Content */}
 
 
-                <div className="py-5 upcoming-events" style={{ backgroundImage: 'url("images/hero_6.jpeg")', backgroundAttachment: 'fixed' }}>
+                <div className="py-5 upcoming-events" style={{ backgroundImage: 'url('+Hero6+')', backgroundAttachment: 'fixed' }}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-md-6">

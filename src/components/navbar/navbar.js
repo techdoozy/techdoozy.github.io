@@ -6,7 +6,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { NavLink } from "react-router-dom";
 import { FaAngleDown } from "react-icons/fa6";
-
+import Logo from '../../logo.svg'
 import { NavData } from './navData';
 
 function NavBar() {
@@ -83,7 +83,7 @@ function NavBar() {
                                 <div className="row align-items-center">
                                     <div className="col-2">
                                         {/* <h2 className="mb-0 site-logo"><a href="index.html">TechDoozy</a></h2> */}
-                                        <img src="/logo.svg" className="mb-0 site-logo" width={220}/>
+                                        <img src={Logo} className="mb-0 site-logo" width={220}/>
                                     </div>
                                     <div className="col-10">
                                         <nav className="site-navigation text-right" role="navigation">
