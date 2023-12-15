@@ -27,7 +27,7 @@ const router = createBrowserRouter([
         element: <AppLayout />,
         children: [
             {
-                path: "/techdoozy",
+                path: "/",
                 element: <Home />,
               },
               {
