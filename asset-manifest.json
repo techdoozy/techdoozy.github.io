@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/techdoozy/static/css/main.187ffcdc.css",
+    "main.js": "/techdoozy/static/js/main.3bc6dcf8.js",
+    "static/media/hero_6.jpeg": "/techdoozy/static/media/hero_6.5ba9ac7497c12ab46140.jpeg",
+    "static/media/logo.svg": "/techdoozy/static/media/logo.1b700902c7b61ada749be4601832d61a.svg",
+    "index.html": "/techdoozy/index.html",
+    "main.187ffcdc.css.map": "/techdoozy/static/css/main.187ffcdc.css.map",
+    "main.3bc6dcf8.js.map": "/techdoozy/static/js/main.3bc6dcf8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.187ffcdc.css",
+    "static/js/main.3bc6dcf8.js"
+  ]
+}
