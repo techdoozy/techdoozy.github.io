@@ -12,17 +12,61 @@ export const NavData = [
                 path: "/java",
                 children: [
                     {
-                        title: "Machine Learning",
+                        title: "QR-Code based projects",
                         path: "/ml",
                     },
                     {
-                        title: "Artificial Intelligence",
+                        title: "Cyber Security Projects",
                         path: "/ai",
-                    }
+                    },
+                    {
+                        title: "Healthcare Projects",
+                        path: "/ai",
+                    },
+                    {
+                        title: "Public Services Automation System",
+                        path: "/ai",
+                    },
+                    {
+                        title: "Machine Learning",
+                        path: "/ai",
+                    },
+                    {
+                        title: "Education - Learning",
+                        path: "/ai",
+                    },
+                    // {
+                    //     title: "Real Time Projects",
+                    //     path: "/ai",
+                    // },
+                    // {
+                    //     title: "Social Networking Project",
+                    //     path: "/ai",
+                    // },
+                    // {
+                    //     title: "Company Based Projects",
+                    //     path: "/ai",
+                    // },
+                    // {
+                    //     title: "E-Commerce",
+                    //     path: "/ai",
+                    // },
+                    // {
+                    //     title: "Cloud Computing",
+                    //     path: "/ai",
+                    // },
+                    // {
+                    //     title: "Travel Booking based projects",
+                    //     path: "/ai",
+                    // },
+                    // {
+                    //     title: "Desktop Applications",
+                    //     path: "/ai",
+                    // }
                 ]
             },
             {
-                title: "Embedded Projects",
+                title: "Dot Net Projects",
                 path: "/embedded",
             },
             {
@@ -30,17 +74,13 @@ export const NavData = [
                 path: "/python",
             },
             {
-                title: "BCA Projects",
+                title: "PHP Projects",
                 path: "/bca",
             },
             {
                 title: "Mini Projects",
                 path: "/mini",
-            },
-            {
-                title: "MBA Projects",
-                path: "/mba",
-            },
+            }
         ]
     },
     {
