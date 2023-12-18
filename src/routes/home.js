@@ -1,4 +1,4 @@
-import React from "react";
+import React,{ useState }  from "react";
 import { SliderData } from '../components/imageslider/Sliderdata';
 import ImageSlider from "../components/imageslider/ImageSlider";
 import { FaJava } from 'react-icons/fa'
@@ -14,12 +14,21 @@ import { FaPlay } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Hero6 from '../hero_6.jpeg'
 
 import Testimonials from '../components/testimonials'
 
 
 function Home() {
+    const [click, setClick] = useState(false)
+    const handleClick = () => {
+        setClick(!click)
+    }
+    const closeWhatsapp = () => {
+        setClick(false)
+    }
+
     return (
         <>
             <div>
@@ -248,11 +257,11 @@ function Home() {
                 <div className="mystickyelements-fixed mystickyelements-position-left mystickyelements-position-screen-center mystickyelements-position-mobile-left mystickyelements-on-hover mystickyelements-size-medium mystickyelements-mobile-size-medium mystickyelements-entry-effect-slide-in mystickyelements-templates-default entry-effect" style={{ transition: 'all 0s ease 0s' }}>
                     <div className="mystickyelement-lists-wrap">
                         <ul className="mystickyelements-lists mysticky">
-                            <li className="mystickyelements-minimize ">
+                            <li className={(click) ? "mystickyelements-minimize" : "mystickyelements-minimize element-minimize"} onClick={handleClick}>
                                 <span className="mystickyelements-minimize minimize-position-left minimize-position-mobile-left" style={{ background: '#000000' }}>
-                                    <IconContext.Provider value={{ color: "#fff" }}><FaArrowLeftLong />	</IconContext.Provider>							</span>
+                                    <IconContext.Provider value={{ color: "#fff" }}> {(click) ? <FaArrowLeftLong /> : <FaArrowRightLong/>}	</IconContext.Provider>							</span>
                             </li>
-                            <li id="mystickyelements-social-whatsapp" className="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on">
+                            <li id="mystickyelements-social-whatsapp" className="mystickyelements-social-icon-li mystickyelements-social-whatsapp element-desktop-on element-mobile-on" style={(click) ? {} : {display: "none"}}>
                                 <style dangerouslySetInnerHTML={{ __html: "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" }} />
                                 <span className="mystickyelements-social-icon social-whatsapp social-custom" data-tab-setting="hover" data-click={0} data-mobile-behavior="disable" data-flyout="disable" style={{ background: '#0e7f20' }}>
                                     <a href="https://api.whatsapp.com/send?phone=919986744852" target="_blank" rel="noopener" data-url="https://api.whatsapp.com/send?phone=919986744852" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">
@@ -264,7 +273,7 @@ function Home() {
                                         WhatsApp																					</a>
                                 </span>
                             </li>
-                            <li id="mystickyelements-social-phone" className="mystickyelements-social-icon-li mystickyelements-social-phone element-desktop-on element-mobile-on">
+                            <li id="mystickyelements-social-phone" className="mystickyelements-social-icon-li mystickyelements-social-phone element-desktop-on element-mobile-on" style={(click) ? {} : {display: "none"}}>
                                 <style dangerouslySetInnerHTML={{ __html: "\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t" }} />
                                 <span className="mystickyelements-social-icon social-phone social-custom" data-tab-setting="hover" data-click={0} data-mobile-behavior="disable" data-flyout="disable" style={{ background: 'rgb(43, 125, 239)', borderBottomRightRadius: '10px' }}>
                                     <a href="tel:+91919986744852" data-url="tel:+919986744852" data-tab-setting="hover" data-mobile-behavior="disable" data-flyout="disable">

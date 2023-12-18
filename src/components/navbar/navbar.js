@@ -162,11 +162,11 @@ function NavBar() {
                         <div className="site-navbar bg-light">
                             <div className="py-1">
                                 <div className="row align-items-center">
-                                    <div className="col-2">
+                                    <div className="col-6">
                                         {/* <h2 className="mb-0 site-logo"><a href="index.html">TechDoozy</a></h2> */}
-                                        <img src={Logo} className="mb-0 site-logo" width={220}/>
+                                        <img src={Logo} className="mb-0 site-logo"/>
                                     </div>
-                                    <div className="col-10">
+                                    <div className="col-6">
                                         <nav className="site-navigation text-right" role="navigation">
                                             <div className="container">
                                                 <div className="d-inline-block d-lg-none  ml-md-0 mr-auto py-3">
